@@ -13,6 +13,7 @@ div {
 }
 
 .container {
+    overflow:hidden;
     background: #ECF0F1;
     height: 820px;
     width: 1600px;
@@ -27,7 +28,7 @@ div {
 }
 
 .container-map{
-    background: url("main-map.png") no-repeat 100% #ECF0F1;
+    background: url("../images/main-map.png") no-repeat 100% #ECF0F1;
 }
 
 .header {
