@@ -343,8 +343,16 @@ padding-left:4px;
     color: #ECF0F1;
 }
 
-.big-circle{
-    position:relative
+
+.small-circle{
+    position:absolute;
+    width:357px;
+    height:357px;
+    opacity: 0.03;
+    border: 9px solid #34495E;
+    border-radius:50%;
+    box-shadow: inset #ECF0F1 0 0 0 41px;
+    margin:50px;
 }
 
 .social-list {
