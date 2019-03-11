@@ -17,18 +17,17 @@ div {
     height: 820px;
     width: 1600px;
     display: flex;
-    flex-direction: row;
     position: relative;
-}
-
-.container-column{
     flex-direction: column;
     background: linear-gradient(to right, #34495E 0%, #34495E 49.99%, #ECF0F1 50%, #ECF0F1 100%)
 }
 
 .container-column-white{
-    flex-direction: column;
     background: linear-gradient(to right, #ECF0F1 0%, #ECF0F1 49.99%, #34495E 50%, #34495E 100%);
+}
+
+.container-map{
+    background: url("main-map.png") no-repeat 100% #ECF0F1;
 }
 
 .header {
@@ -92,4 +91,53 @@ div {
 
 .on-white{
     color: #34495E;
+}
+
+.social-list {
+    padding: 0;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.social-item {
+    display: inline-block;
+    margin-left: 0;
+}
+.social-item:first-child {
+    margin-left: 0;
+}
+.social-link {
+    display: block;
+    width: 23px;
+    height: 23px;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid #FFFFFF;
+    text-decoration: none;
+}
+.social-list-dark .social-item .social-link {
+    border-color: #34495E;
+}
+
+.social-list-dark{
+    padding: 0;
+}
+
+.social-list-white{
+    padding-left: 220px;
+    margin: 0;
+}
+.social-link .fab {
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 23px;
+}
+.social-list-dark .social-item .social-link .fab {
+    color: #34495E;
+}
+.social-list-dark .social-item .social-link:hover .fab {
+    color: darkred;
+}
+.social-link:hover .fab  {
+    color: darkred;
 }
