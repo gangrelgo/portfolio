@@ -1,0 +1,70 @@
+#about-area {
+    height: 100%;
+    min-height: 100%;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-quote-left {
+    position: relative;
+    top: 220px;
+    left: 232px;
+    color: #34495E;
+    display: block;
+    height: 50px;
+    font-size: 48px;
+    margin: 0;
+    z-index:3;
+}
+
+.my-left-donut {
+    position: relative;
+    text-shadow: 0 3px 3px #ccc;
+    font: 600 18px/25px 'Merriweather Sans', Tahoma, serif;
+    font-style: normal;
+    text-align: left;
+    letter-spacing: 1.3px;
+    color: #34495E;
+    display: block;
+    width: 475px;
+    height: 125px;
+    margin-top: 289px;
+    margin-left:185px;
+    padding: 0;
+    z-index: 3;
+}
+
+
+.text-area {
+    position: absolute;
+    width: 400px;
+    height: 420px;
+    text-align: left;
+    top: 174px;
+    right: 226px;
+}
+
+.paragraph {
+    font-family: Merriweather Sans, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    font-size: 15px;
+    letter-spacing: 1.2px;
+    color: #ECF0F1;
+}
+
+
+.small-circle {
+    position:absolute;
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    box-shadow: 0 0 0 3px rgba(52, 73, 94, .03) , 0 0 0 48px #ECF0F1, 0 0 0 52px rgba(52, 73, 94, .03), 0 0 0 92px #ECF0F1, 0 0 0 97px rgba(52, 73, 94, .03), 0 0 0 142px #ECF0F1, 0 0 0 148px rgba(52, 73, 94, .03);
+    top: calc(50% - 45px);
+    left:25%;
+    background:transparent;
+}
+

@@ -1,0 +1,52 @@
+#product-page-area {
+    height: 100%;
+    min-height: 100%;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-text-area {
+    margin: 168px auto auto 70px;
+    position: relative;
+    z-index:2
+}
+
+.cases {
+    font-family: Open Sans, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 87px;
+    font-size: 64px;
+    letter-spacing: 3px;
+    color: #FFFFFF;
+
+}
+
+.case-text {
+    font-family: Open Sans, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 23px;
+    font-size: 16px;
+    letter-spacing: 0.72px;
+    color: #ECF0F1;
+    width:201px;
+    height: 115px;
+}
+
+.case-pict {
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+}
+
+.main-image-area {
+    position:absolute;
+    top:98px;
+    right:255px;
+    height:515px;
+    width:900px;
+}
