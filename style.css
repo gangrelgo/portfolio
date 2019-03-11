@@ -1,14 +1,4 @@
-html, body  {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    height: 100%;
-    min-height: 100%;
-}
 
-div {
-    box-sizing: border-box;
-}
 
 #main-area {
     height: 100%;
@@ -19,6 +9,14 @@ div {
     align-items: center;
 }
 
+#about-area{
+    height: 100%;
+    min-height: 100%;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #main-page-area{
     height: 100%;
     min-height: 100%;
@@ -27,19 +25,16 @@ div {
     justify-content: center;
     align-items: center;
 }
-.container {
-    background: #ECF0F1;
-    height: 820px;
-    width: 1600px;
+
+#contacts-area{
+    height: 100%;
+    min-height: 100%;
+    background: #ffffff;
     display: flex;
-    flex-direction: row;
-    position: relative;
+    justify-content: center;
+    align-items: center;
 }
 
-.container-column{
-    flex-direction: column;
-    background: linear-gradient(to right, #34495E 0%, #34495E 49.99%, #ECF0F1 50%, #ECF0F1 100%)
-}
 
 .left-side {
     width: 50%;
@@ -72,12 +67,17 @@ div {
     margin: 0;;
 }
 
+.menu-list-white{
+    padding:0;
+    margin:0;
+}
+
 
 .menu-list-dark .menu-item .menu-link, .menu-list-dark .menu-item .menu-link:hover:before {
     color: #ECF0F1;
 }
 
-.menu-list-white .menu-item .menu-link, .menu-list-dark .menu-item .menu-link-white:hover:before{
+.menu-list-white .menu-item .menu-link, .menu-list-white .menu-item .menu-link-white:hover:before{
     color: #34495E
 }
 .menu-item {
@@ -143,31 +143,33 @@ div {
 
 .fa-quote-left{
     position: relative;
-    top: 264px;
-    left: 230px;
+    top: 220px;
+    left: 232px;
     color: #34495E;
     display: block;
+    height:50px;
     font-size: 48px; /*как сделать 48х40 */
     margin: 0;
+    z-index:3;
 }
 
 .my-left-donut{
-    position: absolute;
-    top: 339px;
-    right: 89px;
-    text-shadow: 0px 3px 3px #ccc;
-    left: 231px;
+    position: relative;
+    text-shadow: 0 3px 3px #ccc;
     font: 600 18px/25px 'Merriweather Sans', Tahoma, serif;
     font-style: normal;
     text-align: left;
     letter-spacing: 1.3px;
     color: #34495E;
     display: block;
-    width: 475px; /* тут был косяк: на макете 480px, но нужный вид текст принял при этом значении */
+    width: 475px;
     height: 125px;
-    margin: 0;
+    margin-top: 289px;
+    margin-left:185px;
     padding: 0;
+    z-index: 3;
 }
+
 
 .title-area {
     top: calc(50% - 80px);
@@ -187,51 +189,125 @@ div {
     -webkit-text-fill-color: transparent;
 }
 
-.header {
-    height: 50px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    padding-top: 33px;
-}
-
-.content{
-    height: 100%;
-    width: 100%;
-}
-
-.content-area{
-    padding: 0 230px 0 140px;
-    position:relative;
-    height:100%;
-}
-.footer{
-    display: flex;
-    flex-direction: row;
-    height: 100px;
-    width: 100%;
-}
 
 .main-text-area{
     margin: 168px auto auto 70px;
+    position: relative;
+    z-index:2
 }
 
+.cases{
+    font-family: Open Sans, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 87px;
+    font-size: 64px;
+    letter-spacing: 3px;
+    color: #FFFFFF;
+
+}
+
+.form{
+    display:flex;
+    flex-direction: column;
+    margin-left:238px;
+    margin-top:110px;
+    position:relative;
+}
+.text-form{
+    font-family: Open Sans, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 19px;
+    font-size: 14px;
+    color: #ECF0F1;
+    background: #34495E;
+    border: 1px solid #34495E;
+    border-radius:27px;
+    width:325px;
+    height:55px;
+    padding-left:25px;
+}
+
+.text-message{
+    font-family: Open Sans, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 19px;
+    font-size: 14px;
+    color: #ECF0F1;
+    background: #34495E;
+    border: 1px solid #34495E;
+    border-radius:27px;
+    width:325px;
+    height:168px;
+    padding-left:25px;
+}
+
+.submit{
+    background: #ECF0F1;
+    width:350px;
+    height:55px;
+    border: 2px solid #34495E;
+    border-radius: 27px;
+    padding-left:25px;
+    display:flex;
+    flex-direction: row;
+}
+
+.sub-pict{
+padding-left:4px;
+}
+
+.sub-text{
+    font:700 19px/14px 'Open Sans', sans-serif;
+    color: #34495E;
+    padding-left:120px;
+    font-size: 14px;
+}
+
+.text-form::-webkit-input-placeholder{
+    color: #ECF0F1;
+}
+.text-message::-webkit-input-placeholder{
+    color: #ECF0F1;
+}
 .main-image-area{
     position:absolute;
     top:98px;
-    right:0;
+    right:255px; /* хуеверсткий костыль */
     height:515px;
     width:900px;
-    background:red;
-}
-.half-side{
-    width: 50%;
-    display:flex;
-    justify-content: center;
 }
 
-.p-left-social{
-    padding-left: 140px;
+
+.case-text{
+    font-family: Open Sans, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 23px;
+    font-size: 16px;
+    letter-spacing: 0.72px;
+    color: #ECF0F1;
+    width:201px;
+    height: 115px;
+}
+
+.case-pict{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+}
+
+
+.map{
+    position:absolute;
+    top:0px;
+    right:0px;
+    width: 50%;
+    height: 100%;
+    z-index: 0;
 }
 
 .top-area {
@@ -240,39 +316,14 @@ div {
     text-align: center;
 }
 
-.page-title {
-    display: block;
-    font: 800 12px/15px 'Merriweather Sans', Tahoma, serif;
-    letter-spacing: 0.7px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    text-decoration: none;
-}
 
-.page-title-dark {
-    color: #34495E;
-}
 
 .bottom-area {
     height: 50%;
     text-align: center;
     padding: 317px 0 0 0;
 }
-.who-we-are{
-    top: 34px;
-    right: 229px;
-    position: absolute;
-    padding: 0px;
-    margin: 0px;
-    height: 15px;
-    font: 800 12px/15px 'Merriweather Sans', Tahoma, sans-serif;
-    font-size: 12px;
-    text-align: right;
-    letter-spacing: 0.7px;
-    text-transform: uppercase;
-    color: #ECF0F1;
 
-}
 .text-area{
     position: absolute;
     width: 400px; /*должно быть 480 ?! */
@@ -283,7 +334,7 @@ div {
 }
 
 .parag{
-    font-family: Merriweather Sans;
+    font-family: Merriweather Sans, sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 21px;
@@ -292,14 +343,19 @@ div {
     color: #ECF0F1;
 }
 
+.big-circle{
+    position:relative
+}
+
 .social-list {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
+    padding-top: 10px;
 }
 
 .social-item {
     display: inline-block;
-    margin-left: 0px;
+    margin-left: 0;
 }
 .social-item:first-child {
     margin-left: 0;
@@ -318,13 +374,12 @@ div {
 }
 
 .social-list-dark{
-    padding: 0px;
+    padding: 0;
 }
 
 .social-list-white{
-    /*position: absolute; !* были по центру экрана *!*/
     padding-left: 220px;
-    margin: 0px;
+    margin: 0;
 }
 .social-link .fab {
     color: #FFFFFF;
