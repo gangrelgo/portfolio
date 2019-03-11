@@ -67,6 +67,11 @@
     margin: 0;;
 }
 
+.menu-list-white{
+    padding:0;
+    margin:0;
+}
+
 
 .menu-list-dark .menu-item .menu-link, .menu-list-dark .menu-item .menu-link:hover:before {
     color: #ECF0F1;
@@ -142,27 +147,29 @@
     left: 232px;
     color: #34495E;
     display: block;
+    height:50px;
     font-size: 48px; /*как сделать 48х40 */
     margin: 0;
+    z-index:3;
 }
 
 .my-left-donut{
-    position: absolute;
-    top: 339px;
-    right: 89px;
+    position: relative;
     text-shadow: 0 3px 3px #ccc;
-    left: 231px;
     font: 600 18px/25px 'Merriweather Sans', Tahoma, serif;
     font-style: normal;
     text-align: left;
     letter-spacing: 1.3px;
     color: #34495E;
     display: block;
-    width: 475px; /* тут был косяк: на макете 480px, но нужный вид текст принял при этом значении */
+    width: 475px;
     height: 125px;
-    margin: 0;
+    margin-top: 289px;
+    margin-left:185px;
     padding: 0;
+    z-index: 3;
 }
+
 
 .title-area {
     top: calc(50% - 80px);
@@ -336,9 +343,14 @@ padding-left:4px;
     color: #ECF0F1;
 }
 
+.big-circle{
+    position:relative
+}
+
 .social-list {
     padding: 0;
     margin: 0;
+    padding-top: 10px;
 }
 
 .social-item {
@@ -366,9 +378,7 @@ padding-left:4px;
 }
 
 .social-list-white{
-    /*position: absolute; !* были по центру экрана *!*/
     padding-left: 220px;
-    padding-top: 35px;
     margin: 0;
 }
 .social-link .fab {
