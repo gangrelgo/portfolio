@@ -148,7 +148,7 @@
     color: #34495E;
     display: block;
     height:50px;
-    font-size: 48px; /*как сделать 48х40 */
+    font-size: 48px;
     margin: 0;
     z-index:3;
 }
@@ -211,7 +211,7 @@
     display:flex;
     flex-direction: column;
     margin-left:238px;
-    margin-top:110px;
+    margin-top:85px;
     position:relative;
 }
 .text-form{
@@ -275,7 +275,7 @@ padding-left:4px;
 .main-image-area{
     position:absolute;
     top:98px;
-    right:255px; /* хуеверсткий костыль */
+    right:255px;
     height:515px;
     width:900px;
 }
@@ -310,19 +310,6 @@ padding-left:4px;
     z-index: 0;
 }
 
-.top-area {
-    height: 50%;
-    padding: 33px 0 0 0;
-    text-align: center;
-}
-
-
-
-.bottom-area {
-    height: 50%;
-    text-align: center;
-    padding: 317px 0 0 0;
-}
 
 .text-area{
     position: absolute;
@@ -355,51 +342,9 @@ padding-left:4px;
     margin:50px;
 }
 
-.social-list {
-    padding: 0;
-    margin: 0;
-    padding-top: 10px;
-}
-
-.social-item {
-    display: inline-block;
-    margin-left: 0;
-}
-.social-item:first-child {
-    margin-left: 0;
-}
-.social-link {
-    display: block;
-    width: 23px;
-    height: 23px;
-    text-align: center;
-    border-radius: 50%;
-    border: 2px solid #FFFFFF;
-    text-decoration: none;
-}
-.social-list-dark .social-item .social-link {
-    border-color: #34495E;
-}
-
-.social-list-dark{
-    padding: 0;
-}
-
-.social-list-white{
-    padding-left: 220px;
-    margin: 0;
-}
-.social-link .fab {
-    color: #FFFFFF;
-    font-size: 14px;
-    line-height: 23px;
-}
-.social-list-dark .social-item .social-link .fab {
-    color: #34495E;
-}
-.social-list-dark .social-item .social-link:hover .fab {
-    color: darkred;
-}
-.social-link:hover .fab  {
-    color: darkred;
+.page-form{
+    width:352px;
+    }
+.page-form input, textarea{
+    margin-bottom: 35px;
 }
