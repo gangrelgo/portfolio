@@ -31,6 +31,8 @@ div {
     background: url("../images/main-map.png") no-repeat 100% #ECF0F1;
 }
 
+
+
 .header {
     height: 50px;
     width: 100%;
@@ -67,12 +69,103 @@ div {
     z-index: 1;
 }
 
+
+
+/* Меню на каждой странице */
+.menu {
+    margin: 720px 0 0;
+    text-align: center;
+}
+
+.menu-column {
+    margin: 0;
+    padding: 0;
+}
+.menu-list {
+    padding: 0;
+    margin:0;
+}
+
+.menu-list-dark .menu-item .menu-link {
+    color: #ECF0F1;
+}
+
+.menu-list-dark .menu-item .menu-link:hover:before {
+    background: #ECF0F1;
+}
+
+.menu-list-white .menu-item .menu-link {
+    color: #34495E;
+}
+.menu-list-white .menu-item .menu-link:before {
+    background: #34495E;
+}
+.menu-item {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.menu-list-white .menu-item-active .menu-link:before {
+    display:block;
+}
+
+.menu-list-dark .menu-item-active .menu-link:before {
+    display:block;
+}
+
+.menu-item:first-child {
+    margin-left: 0;
+}
+
+.menu-link {
+    font: bold 12px/15px 'Merriweather Sans', Tahoma, serif;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: #ECF0F1;
+    text-decoration: none;
+    position: relative;
+}
+
+.menu-link-white {
+    font: bold 12px/15px 'Merriweather Sans', Tahoma, serif;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: #34495E;
+    text-decoration: none;
+    position: relative;
+}
+
+.menu-link-white:before {
+    background: #34495E;
+}
+
+.menu-link:hover:before {
+    display:block;
+}
+
+.menu-link:before {
+    content: '';
+    position: absolute;
+    display:none;
+    width: 44px;
+    height: 3px;
+    top: calc(50% - 2px);
+    left: calc(50% - 22px);
+    transform: rotate(-45deg);
+    background: #FFFFFF;
+    text-decoration: underline;
+}
+
+
+/* Отступ для header и footer */
 .p-left-social{
     position:relative;
     padding-left: 140px;
     z-index: 1;
 }
 
+
+/* Название страницы (справа) */
 .page-title {
     display: block;
     font: 800 12px/15px 'Merriweather Sans', Tahoma, serif;
@@ -86,14 +179,10 @@ div {
     color: #ECF0F1;
 }
 
-.on-dark{
-    color: #ECF0F1;
-}
 
-.on-white{
-    color: #34495E;
-}
 
+
+/* социальные сети */
 .social-list {
     padding: 0;
     margin: 0;
