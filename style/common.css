@@ -14,7 +14,6 @@ div {
 
 .container {
     overflow:hidden;
-    background: #ECF0F1;
     height: 820px;
     width: 1600px;
     display: flex;
