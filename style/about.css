@@ -30,20 +30,25 @@
     display: block;
     width: 475px;
     height: 125px;
-    margin-top: 289px;
-    margin-left:185px;
+    margin-top: 239px;
+    margin-left:230px;
     padding: 0;
     z-index: 3;
 }
 
+.half-content{
+    width:50%;
+    height:100%;
+    align-items: center;
+}
 
 .text-area {
-    position: absolute;
+    position: relative;
     width: 400px;
     height: 420px;
     text-align: left;
-    top: 174px;
-    right: 226px;
+    margin-left:25%;
+    margin-top:125px;
 }
 
 .paragraph {
@@ -68,3 +73,217 @@
     background:transparent;
 }
 
+@media screen and (max-width: 1600px) {
+
+    .my-left-donut{
+        margin-left: 125px;
+        margin-top: 238px;
+    }
+
+    .fa-quote-left{
+        top: 230px;
+        left: 126px;
+    }
+
+    .small-circle{
+        left: 23%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .container {
+        background: #ECF0F1;
+        width: 100%;
+        height: 100%;
+    }
+    .content {
+        align-items: center;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .half-content{
+        height:50%;
+        width:100%;
+        margin:0;
+        align-items: center;
+    }
+
+    .text-area{
+        width:75%;
+        margin-left:134px;
+        margin-top:0;
+    }
+
+    .my-left-donut{
+        margin-left:25%;
+        margin-top:15%;
+    }
+
+    .fa-quote-left{
+        top: 139px;
+        left: 235px;
+    }
+
+    .small-circle{
+        left:42%;
+        top:21%;
+    }
+
+    .paragraph{
+        color: #34495E;
+    }
+
+    .header .half-side {
+        display: none;
+    }
+    .header .p-left-social {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+    .page-title {
+        color: #34495E;
+        text-align: center;
+    }
+    .footer {
+        flex-direction: column;
+    }
+    .footer .half-side {
+        width: 100%;
+    }
+    .footer .p-left-social {
+        padding: 0;
+        margin: 20px 0;
+    }
+    .footer .menu-item {
+        margin-left: 15px;
+    }
+    .footer .menu-item:first-child {
+        margin: 0;
+    }
+    .footer .social-list .social-link {
+        border-color: #34495E;
+    }
+    .footer .social-list .social-link .fab {
+        color: #34495E;
+    }
+}
+@media screen and (max-width: 960px) {
+    .container {
+        background: #ECF0F1;
+        width: 100%;
+        height: 100%;
+    }
+    .content {
+        align-items: center;
+        padding: 0 20px;
+    }
+
+
+    .header .half-side {
+        display: none;
+    }
+    .header .p-left-social {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+    .page-title {
+        color: #ffffff;
+        text-align: center;
+    }
+    .footer {
+        flex-direction: column;
+    }
+    .footer .half-side {
+        width: 100%;
+    }
+    .footer .p-left-social {
+        padding: 0;
+        margin: 20px 0;
+    }
+    .footer .menu-item {
+        margin-left: 15px;
+    }
+    .footer .menu-item:first-child {
+        margin: 0;
+    }
+    .footer .social-list-dark .social-link {
+        border-color: #FFFFFF;
+    }
+    .footer .social-list-dark .social-link .fab {
+        color: #FFFFFF;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        background: #ECF0F1;
+        width: 100%;
+        height: 100%;
+    }
+    .content {
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .text-area{
+        width: 100%;
+        margin: 0;
+    }
+
+    .fa-quote-left{
+        top: 90px;
+        left: 123px;
+    }
+
+    .my-left-donut{
+        margin-left:121px;
+    }
+
+    .paragraph{
+        line-height: 26px;
+        font-size: 11px;
+    }
+
+    .header .half-side {
+        display: none;
+    }
+    .header .p-left-social {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+    .page-title {
+        color: #34495E;
+        text-align: center;
+    }
+    .footer {
+        flex-direction: column;
+    }
+    .footer .half-side {
+        width: 100%;
+    }
+    .footer .p-left-social {
+        padding: 0;
+        margin: 20px 0;
+    }
+    .footer .menu-item {
+        margin-left: 15px;
+    }
+    .footer .menu-item:first-child {
+        margin: 0;
+    }
+    .footer .social-list-dark .social-link {
+        border-color: #FFFFFF;
+    }
+    .footer .social-list-dark .social-link .fab {
+        color: #FFFFFF;
+    }
+}
+@media screen and (max-width: 320px) {
+    .title-area {
+
+    }
+}

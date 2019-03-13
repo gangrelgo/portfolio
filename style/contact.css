@@ -93,3 +93,116 @@
 .page-form input, textarea {
     margin-bottom: 35px;
 }
+
+@media screen and (max-width: 1600px) {
+    .container {
+        background: #ECF0F1;
+        width: 100%;
+        height: 100%;
+    }
+    .content {
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .map {
+        position:absolute;
+        top:0px;
+        right:0px;
+        width: 50%;
+        height: 100%;
+        z-index: 0;
+    }
+
+    .header .half-side {
+        display: none;
+    }
+    .header .p-left-social {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+    .page-title {
+        color: #ffffff;
+        text-align: center;
+    }
+    .footer {
+        flex-direction: column;
+    }
+    .footer .half-side {
+        width: 100%;
+    }
+    .footer .p-left-social {
+        padding: 0;
+        margin: 20px 0;
+    }
+    .footer .menu-item {
+        margin-left: 15px;
+    }
+    .footer .menu-item:first-child {
+        margin: 0;
+    }
+    .footer .social-list-dark .social-link {
+        border-color: #FFFFFF;
+    }
+    .footer .social-list-dark .social-link .fab {
+        color: #FFFFFF;
+    }
+}
+@media screen and (max-width: 1200px) {
+
+}
+@media screen and (max-width: 960px) {
+
+}
+@media screen and (max-width: 768px) {
+    .container {
+        background: #ECF0F1;
+        width: 100%;
+        height: 100%;
+    }
+    .content {
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .header .half-side {
+        display: none;
+    }
+    .header .p-left-social {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+    .page-title {
+        color: #ffffff;
+        text-align: center;
+    }
+    .footer {
+        flex-direction: column;
+    }
+    .footer .half-side {
+        width: 100%;
+    }
+    .footer .p-left-social {
+        padding: 0;
+        margin: 20px 0;
+    }
+    .footer .menu-item {
+        margin-left: 15px;
+    }
+    .footer .menu-item:first-child {
+        margin: 0;
+    }
+    .footer .social-list-dark .social-link {
+        border-color: #FFFFFF;
+    }
+    .footer .social-list-dark .social-link .fab {
+        color: #FFFFFF;
+    }
+}
+@media screen and (max-width: 320px) {
+    .title-area {
+
+    }
+}
