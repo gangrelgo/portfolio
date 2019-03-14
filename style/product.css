@@ -85,20 +85,19 @@
     }
 
     .main-text-area{
-        margin: 64px auto auto 159px;
-        width: 62%;
-        height: 50%;
+        text-align:center;
+        /* не должно быть отступа. текст алигн центер. видс 100% убрать высоту */
+        width: 100%;
     }
 
     .case-text{
         width:100%;
     }
 
-    .main-image-area{
-        top: 366px;
-        left: 0px;
+    .main-image-area{ /* position relative, направления auto, убрать высоту 50%(авто), width 100% */
+        position:relative;
         width: 100%;
-        height: 50%;
+        height: auto;
     }
 
     .header .half-side {
