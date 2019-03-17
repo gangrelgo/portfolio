@@ -18,20 +18,25 @@
 }
 
 
-.my-left-donut {
-    display:flex;
+.about-left-content{
+    display: flex;
     flex-direction: column;
+    width:60%;
+    margin:220px auto 0 230px;
+}
+
+.my-left-donut {
     position: relative;
     text-shadow: 0 3px 3px #ccc;
     font: 600 18px/25px 'Merriweather Sans', Tahoma, serif;
     font-style: normal;
-    text-align: center;
+    text-align: left;
     letter-spacing: 1.3px;
     color: #34495E;
-    width: 425px;
-    height: 125px;
+    height: auto;
     padding: 0;
     z-index: 3;
+    margin-top:35px;
 }
 
 .half-content{
@@ -43,7 +48,6 @@
 .text-area {
     position: relative;
     width: 400px;
-    height: 420px;
     margin-left:25%;
     margin-top:125px;
 }
@@ -78,12 +82,6 @@
 
 @media screen and (max-width: 1600px) {
 
-    .my-left-donut{
-       margin:0;
-       padding:0;
-    }
-
-
 }
 @media screen and (max-width: 1200px) {
     .container {
@@ -99,7 +97,7 @@
     }
 
     .half-content{
-        height:50%;
+        height: auto;
         width:100%;
         margin:0;
         align-items: center;
@@ -107,23 +105,21 @@
 
     .text-area{
         width:75%;
-        margin-left:134px;
-        margin-top:0;
+        margin: 100px auto 0;
     }
 
+    .about-left-content{
+        margin: 50px auto 0;
+        width:75%
+    }
 
     .my-left-donut{
         width:100%;
     }
 
-    .fa-quote-left{  /* кавычки в один блок. h1 убрать отступы. ширина 100% */
-        top: 139px;
-        left: 235px;
-    }
-
     .small-circle{
-        left:calc(42%- 90px); /*исправить */
-        top:21%;
+        left: calc(50% - 45px); /*исправить */
+        top: calc(50% - 45px);
     }
 
     .paragraph{
@@ -224,24 +220,38 @@
     .content {
         align-items: center;
         padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .half-content{
+        height: auto;
+        width:100%;
+        margin:0;
+        align-items: center;
     }
 
     .text-area{
-        width: 100%;
-        margin: 0;
+        width:75%;
+        margin: 100px auto 0;
     }
 
-    .fa-quote-left{
-
+    .about-left-content{
+        margin: 50px auto 0;
+        width:75%
     }
 
     .my-left-donut{
-        margin-left:121px;
+        width:100%;
+    }
+
+    .small-circle{
+        left: calc(50% - 45px); /*исправить */
+        top: calc(50% - 45px);
     }
 
     .paragraph{
-        line-height: 26px;
-        font-size: 11px;
+        color: #34495E;
     }
 
     .header .half-side {
@@ -272,11 +282,11 @@
     .footer .menu-item:first-child {
         margin: 0;
     }
-    .footer .social-list-dark .social-link {
-        border-color: #FFFFFF;
+    .footer .social-list .social-link {
+        border-color: #34495E;
     }
-    .footer .social-list-dark .social-link .fab {
-        color: #FFFFFF;
+    .footer .social-list .social-link .fab {
+        color: #34495E;
     }
 }
 @media screen and (max-width: 320px) {

@@ -86,6 +86,7 @@
 
     .main-text-area{
         text-align:center;
+        margin: calc(20% - 127px ) auto 0 auto;
         /* не должно быть отступа. текст алигн центер. видс 100% убрать высоту */
         width: 100%;
     }
@@ -96,8 +97,11 @@
 
     .main-image-area{ /* position relative, направления auto, убрать высоту 50%(авто), width 100% */
         position:relative;
+        left:0;
+        top:0;
         width: 100%;
         height: auto;
+        margin: calc(50% - 200px) auto 0;
     }
 
     .header .half-side {
